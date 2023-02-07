@@ -1,0 +1,19 @@
+.bloco-header {
+    padding: 30px;
+}
+
+.header__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__search input {
+
+    width: 648px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    
+
+}
