@@ -1,5 +1,5 @@
 import './styles.css'
-import logoBranco from '../../assets/ShopVisie-logo-branco.png'
+import LogoBranco from '../../assets/Shopvisie-logo-branco.png'
 import { Link } from 'react-router-dom'
 export const Footer = () => {
     return (
@@ -8,7 +8,7 @@ export const Footer = () => {
 
                 <div className='footer__logo'>
                     <Link to={'/'}>
-                        <img src={logoBranco} alt="Logo ShopVisie branco" />
+                        <img src={LogoBranco} alt="Logo ShopVisie branco" />
                     </Link>
                 </div>
 
