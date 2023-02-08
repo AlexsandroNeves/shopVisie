@@ -1,3 +1,4 @@
+import { Footer } from "../components/footer"
 import Header from "../components/header/index"
 import ListaProduto from "../components/listProduct/index"
 function Product() {
@@ -5,6 +6,7 @@ function Product() {
         <>
             <Header />
             <ListaProduto />
+            <Footer />
         </>
     )
 }

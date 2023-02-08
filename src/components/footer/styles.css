@@ -1,0 +1,26 @@
+.footer {
+    padding: 15px;
+    background-color: #012e57;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__logo img {
+    width: 180px;
+}
+
+.footer__legenda {
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .footer__legenda{
+        padding: 10px 0;
+    }
+}

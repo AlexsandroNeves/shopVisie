@@ -1,0 +1,52 @@
+.breadcrumbs-barra{
+    padding: 2px 10px;
+}
+
+.product__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product__edit-title{
+    text-align: center;
+    margin: 90px 0;
+    font-size: 36px;
+}
+
+.product__form-label{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.product__form-input{
+    outline: none;
+    height: 25px;
+    border: 1px solid #acacac;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.product__edit-button{
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    color: #fff;
+    font-size: 21px;
+    border-radius: 8px;
+    background: #ca2f63;
+
+}
+
+@media (max-width: 800px)
+{
+    .product__edit-title{
+        margin: 30px 0;
+        font-size:28px;
+    }
+    
+}

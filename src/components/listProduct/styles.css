@@ -7,14 +7,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 1250px;
+    max-width: 1250px;
     margin: 0 auto;
     padding-top: 40px;
 }
 
 .products{
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 15px;
     width: 240px;
     height: 410px;
     margin-bottom: 40px;
@@ -64,4 +64,20 @@
 .block-acoes{
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 800px)
+{
+    .products{
+        width: 130px;
+        height: unset;
+    }
+    .image-product{
+        width: 130px;
+        height: 150px;
+    }
+
+    .title-product{
+        font-size: 14px;
+    }
 }

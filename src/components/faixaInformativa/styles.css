@@ -9,6 +9,6 @@
 .bloco-texto-informativo{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 0 auto;
 }

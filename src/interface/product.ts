@@ -10,6 +10,7 @@ interface Product {
     stock: number;
     thumbnail: string;
     title: string;
+    product:Product[];
 }
 
 export default Product

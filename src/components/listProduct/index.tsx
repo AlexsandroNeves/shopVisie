@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { api } from "../../services/api/api";
-import { Link } from "react-router-dom"
+import { product, api } from "../../services/api/api";
+import { Link, useParams } from "react-router-dom"
 import Product from "../../interface/product";
 import './styles.css'
 const listaProduto = () => {
     const [produto, setProduto] = useState<Product[]>([]);
+    const [prodDeletar, setprodDeletar] = useState();
+
     useEffect(() => {
-        api
-            .get("/products?limit=12")
-            .then((response) => setProduto(response.data.products))
-            .catch((err) => {
-                console.error("ops! ocorreu um erro" + err);
-            });
+        product(setProduto)
     }, []);
 
-    console.log(produto)
+
+    useEffect(() => {
+        product(setprodDeletar)
+    }, []);
+
     return (
         <>
             <div className="block-primary-product">
@@ -32,8 +33,8 @@ const listaProduto = () => {
 
                                 <Link to={`/produto/${produtos.id}`} className="button-product"> Ver produto</Link>
                                 <div className="block-acoes">
-                                    <Link to={`/produto/${produtos.id}`} className="button-product button-width"> Editar</Link>
-                                    <Link to={`/produto/${produtos.id}`} className="button-product button-width"> Excluir</Link>
+                                    <Link to={`/atualizar-produto/${produtos.id}`} className="button-product button-width"> Editar</Link>
+                                    <button className="button-product button-width"> Excluir</button>
                                 </div>
 
 

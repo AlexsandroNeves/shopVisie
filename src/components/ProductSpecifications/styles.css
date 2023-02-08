@@ -1,0 +1,48 @@
+.product__bloco{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.breadcrumbs{
+    margin: 45px 0;
+    display: flex;
+}
+
+.product_container{
+    max-width: 550px;
+    width: 100%;
+}
+
+.product__bloco-summary {
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+h2.product__title-description {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+p.product__paragraf {
+    max-width: 650px;
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+
+h1.product__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p.product__descounts {
+    margin-bottom: 20px;
+}
+
+p.product__price {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ca2f63;
+}
