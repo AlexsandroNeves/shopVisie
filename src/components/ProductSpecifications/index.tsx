@@ -31,7 +31,7 @@ function ProductSpecifications() {
                         </div>
                         <div className="product__bloco-summary">
                             <div className="product__image">
-                                <img src={produtos?.images[1]} alt="" />
+                                <img src={produtos?.images[0]} alt="" />
                             </div>
 
                             <div className="product_container">
