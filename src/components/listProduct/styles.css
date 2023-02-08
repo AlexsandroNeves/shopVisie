@@ -1,6 +1,11 @@
 .block-primary-product{
  background-color: #f1f1f1;
+}
 
+.product__bloco-width{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .bloco-products{
@@ -35,6 +40,10 @@
     color: #000;
     font-size: 16px;
     font-family: sans-serif;
+    margin: 10px 0;
+}
+
+.product__brand{
     margin: 10px 0;
 }
 
@@ -79,5 +88,9 @@
 
     .title-product{
         font-size: 14px;
+    }
+
+    .bloco-informativo{
+        display: none;
     }
 }

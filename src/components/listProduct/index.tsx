@@ -5,19 +5,21 @@ import Product from "../../interface/product";
 import './styles.css'
 const listaProduto = () => {
     const [produto, setProduto] = useState<Product[]>([]);
-    const [prodDeletar, setprodDeletar] = useState();
 
     useEffect(() => {
         product(setProduto)
     }, []);
 
 
-    useEffect(() => {
-        product(setprodDeletar)
-    }, []);
+    const deleteProduct = (id: any) => {
+        api.delete(`product/${id}`)
+        setProduto(produto.filter(produto => produto.id !== id))
+
+    }
 
     return (
         <>
+
             <div className="block-primary-product">
 
                 <div className="bloco-products">
@@ -34,7 +36,7 @@ const listaProduto = () => {
                                 <Link to={`/produto/${produtos.id}`} className="button-product"> Ver produto</Link>
                                 <div className="block-acoes">
                                     <Link to={`/atualizar-produto/${produtos.id}`} className="button-product button-width"> Editar</Link>
-                                    <button className="button-product button-width"> Excluir</button>
+                                    <button className="button-product button-width" onClick={() => deleteProduct(produtos.id)}> Excluir</button>
                                 </div>
 
 

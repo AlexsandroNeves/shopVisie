@@ -1,13 +1,14 @@
 import React from "react";
-import FaixaInformativo from "../components/faixaInformativa/Index";
+
 import { Footer } from "../components/footer";
+import Header from "../components/header";
 import ProductEdit from "../components/productEdit/ProductEdit";
 
 const ProductUpdate = () => {
 
     return (
         <>
-            <FaixaInformativo />
+            <Header />
             <ProductEdit />
             <Footer />
         </>

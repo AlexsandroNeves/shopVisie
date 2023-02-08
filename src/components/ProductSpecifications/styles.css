@@ -1,11 +1,19 @@
+
+.product__principal{
+    background-color: #f1f1f1;
+}
+
 .product__bloco{
     max-width: 1180px;
-    margin: 0 auto;
 }
 
 .breadcrumbs{
-    margin: 45px 0;
     display: flex;
+    padding-top: 30px;
+}
+
+.breadcrumbs a{
+    color: #000;
 }
 
 .product_container{
@@ -20,6 +28,11 @@
     margin-top: 50px;
 }
 
+.product__image img{
+    width: 450px;
+  
+}
+
 h2.product__title-description {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -29,12 +42,13 @@ p.product__paragraf {
     max-width: 650px;
     font-size: 17px;
     line-height: 28px;
-    margin-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 h1.product__title {
     font-size: 28px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 p.product__descounts {
@@ -45,4 +59,14 @@ p.product__price {
     margin-bottom: 20px;
     font-size: 20px;
     color: #ca2f63;
+}
+
+@media(max-width:800px) {
+    .product__container_edit{
+        flex-direction: column;
+    }
+
+    .button-product{
+        width: 90%;
+    }
 }
