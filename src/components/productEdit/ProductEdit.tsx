@@ -51,16 +51,16 @@ const ProductEdit = () => {
                             <h1 className="product__title">
                                 {produtos?.title}
                             </h1>
-                            <p>
-                                {produtos?.brand}
+                            <p className="product__brand">
+                             Marca: {produtos?.brand}
                             </p>
 
                             <p className="product__descounts">
-                                {produtos?.discountPercentage}
+                               Desconto de  {produtos?.discountPercentage}% OFF
                             </p>
 
                             <p className="product__price">
-                                <span>R$</span> {produtos?.price},00
+                                <span>R$</span> {produtos?.price},00 no boleto
                             </p>
                             <Link to={`/produto`} className="button-product"> Compre agora</Link>
                         </div>
@@ -81,19 +81,19 @@ const ProductEdit = () => {
 
 
                         <label htmlFor="name" className="product__form-label" >Nome do produto:</label>
-                        <input type="text" id="nome" className="product__form-input" required autoComplete="off" onChange={(e: any) => setTitle(e.target.value)} />
+                        <input type="text" id="nome" className="product__form-input"  autoComplete="off" onChange={(e: any) => setTitle(e.target.value)} />
 
                         <label htmlFor="marca" className="product__form-label" >Marca do produto:</label>
-                        <input type="text" id="marca" className="product__form-input" required autoComplete="off" onChange={(e: any) => setmarca(e.target.value)} />
+                        <input type="text" id="marca" className="product__form-input"  autoComplete="off" onChange={(e: any) => setmarca(e.target.value)} />
 
                         <label htmlFor="desconto" className="product__form-label" >Valor de desconto:</label>
-                        <input type="number" id="desconto" className="product__form-input" required autoComplete="off" onChange={(e: any) => setdesconto(e.target.value)} />
+                        <input type="number" id="desconto" className="product__form-input"  autoComplete="off" onChange={(e: any) => setdesconto(e.target.value)} />
 
                         <label htmlFor="preco" className="product__form-label" >Preço do produto:</label>
-                        <input type="number" id="preco" className="product__form-input" required autoComplete="off" onChange={(e: any) => setpreco(e.target.value)} />
+                        <input type="number" id="preco" className="product__form-input"  autoComplete="off" onChange={(e: any) => setpreco(e.target.value)} />
 
                         <label htmlFor="descricao" className="product__form-label" >Descrição do produto:</label>
-                        <textarea  id="descricao" className="product__form-input" required autoComplete="off" onChange={(e: any) => setdescricao(e.target.value)} />
+                        <textarea  id="descricao" className="product__form-input"  autoComplete="off" onChange={(e: any) => setdescricao(e.target.value)} />
 
                         <button className="product__edit-button"> Salvar</button>
 

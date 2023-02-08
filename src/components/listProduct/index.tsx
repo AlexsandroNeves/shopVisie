@@ -30,8 +30,8 @@ const listaProduto = () => {
                                     <img src={produtos.images[0]} alt={produtos.description} className="image-product" />
                                     <p className="title-product">{produtos.title}</p>
                                 </Link>
-                                <p>{produtos.discountPercentage}%OFF</p>
-                                <p className="price-product"> R$ {produtos.price} no pix</p>
+                                <p>  Desconto de  {produtos.discountPercentage}%OFF</p>
+                                <p className="price-product"> R$ {produtos.price} no boleto</p>
 
                                 <Link to={`/produto/${produtos.id}`} className="button-product"> Ver produto</Link>
                                 <div className="block-acoes">

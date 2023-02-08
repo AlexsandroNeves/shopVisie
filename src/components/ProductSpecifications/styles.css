@@ -1,6 +1,7 @@
 
 .product__principal{
     background-color: #f1f1f1;
+    padding-bottom: 160px;
 }
 
 .product__bloco{
@@ -29,7 +30,8 @@
 }
 
 .product__image img{
-    width: 450px;
+    max-width: 450px;
+    width: 90%;
   
 }
 
@@ -68,5 +70,23 @@ p.product__price {
 
     .button-product{
         width: 90%;
+    }
+
+    .product__principal{
+        padding-bottom: unset;
+
+    }
+
+    .product__bloco-summary{
+        flex-direction: column;
+    }
+
+    .product__image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .breadcrumbs {
+        padding-left: 20px;
     }
 }

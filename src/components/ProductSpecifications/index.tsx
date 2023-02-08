@@ -61,8 +61,10 @@ function ProductSpecifications() {
 
                         </div>
                     </div>
+                    <div className="product__edit-description">
                     <h2 className="product__title-description"> Descrição: </h2>
                     <p className="product__paragraf">{produtos?.description}</p>
+                    </div>
 
                 </div>
             </div>

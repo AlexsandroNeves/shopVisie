@@ -41,6 +41,10 @@ div.product__edit-image {
     font-size: 36px;
 }
 
+.product__brand{
+    margin-top: 10px;
+}
+
 .product__form-label {
     margin-bottom: 15px;
     margin-top: 15px;
